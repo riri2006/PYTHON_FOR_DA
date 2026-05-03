@@ -1,0 +1,31 @@
+# x = 10
+# print(x)
+# y= 20
+# print(y)
+# z = x+y 
+# print(z)
+# isgreater = z > 31
+# print(isgreater)
+
+# if isgreater > 30 :
+#     print("z is greater than 30")
+# else:    print("z is not greater than 30")
+
+
+# for i in range (10):
+#     if i < 5:
+#         print(i)
+        
+# i = 0 
+# while i<10:
+#     print (i)
+#     i = i+1        
+
+list = [1,2,3,4,5,6,7,8,9,10]    
+print(list)
+if list[0] == 1:
+    print("the first element is 1")
+else:
+    print("the first element is not 1")
+
+    
