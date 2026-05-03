@@ -34,4 +34,15 @@
 # result = add(5,10)
 # print(result)    
 
+x = int(input("Enter a number: "))
+y = int(input("Enter another number: "))
+def add(a=0, b=0):
+    return a+b
+result = add(x,y)
+print(result)
 
+def greet(name="Vedant"):
+    print("Hello", name)
+
+greet()
+greet("AI Engineer")
