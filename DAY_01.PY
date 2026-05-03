@@ -28,4 +28,8 @@ if list[0] == 1:
 else:
     print("the first element is not 1")
 
-    
+
+def add(a,b):
+    return a+b
+result = add(5,10)
+print(result)    
