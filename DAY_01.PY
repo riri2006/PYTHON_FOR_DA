@@ -21,15 +21,17 @@
 #     print (i)
 #     i = i+1        
 
-list = [1,2,3,4,5,6,7,8,9,10]    
-print(list)
-if list[0] == 1:
-    print("the first element is 1")
-else:
-    print("the first element is not 1")
+# list = [1,2,3,4,5,6,7,8,9,10]    
+# print(list)
+# if list[0] == 1:
+#     print("the first element is 1")
+# else:
+#     print("the first element is not 1")
 
 
-def add(a,b):
-    return a+b
-result = add(5,10)
-print(result)    
+# def add(a,b):
+#     return a+b
+# result = add(5,10)
+# print(result)    
+
+
