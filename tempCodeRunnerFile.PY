@@ -1,8 +1,6 @@
-x = 10  # global
-
-def test():
-    x = 5  # local
-    print(x)
-
-test()
-print(x)
+try:
+    num = int("abc")
+except ValueError:
+    print("Invalid input! Please enter a valid integer.")
+# except Exception as e:
+#     print(e)

@@ -34,26 +34,40 @@
 # result = add(5,10)
 # print(result)    
 
-x = int(input("Enter a number: "))
-y = int(input("Enter another number: "))
-def add(a=0, b=0):
-    return a+b
-result = add(x,y)
-print(result)
+# x = int(input("Enter a number: "))
+# y = int(input("Enter another number: "))
+# def add(a=0, b=0):
+#     return a+b
+# result = add(x,y)
+# print(result)
 
-def greet(name="Vedant"):
-    print("Hello", name)
+# def greet(name="Vedant"):
+#     print("Hello", name)
 
-greet()
-greet("Alice")
-greet("AI Engineer")
+# greet()
+# greet("Alice")
+# greet("AI Engineer")
 
 
-x = 10  # global
+# x = 10  # global
 
-def test():
-    x = 5  # local
-    print(x)
+# def test():
+#     x = 5  # local
+#     print(x)
 
-test()
-print(x)
+# test()
+# print(x)
+
+
+# import os
+# folder_name = "aimlrv"
+# print(os.path.abspath(folder_name))
+# os.makedirs(folder_name, exist_ok=True)
+# print(os.getcwd())
+
+# first_name = "Vedant"
+# last_name = "Kapil"
+
+# fullname = f"{first_name} {last_name}"
+# print(fullname)
+
