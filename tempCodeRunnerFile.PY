@@ -1,6 +1,10 @@
-try:
-    num = int("abc")
-except ValueError:
-    print("Invalid input! Please enter a valid integer.")
-# except Exception as e:
-#     print(e)
+students_set = {"Vedant", "Raj", "Amit", "Vedant"}
+
+print("SET:")
+print(students_set)
+
+students_set.add("Rahul")
+
+print("After Add:", students_set)
+
+print()

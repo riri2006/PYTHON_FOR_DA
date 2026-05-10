@@ -71,3 +71,14 @@
 # fullname = f"{first_name} {last_name}"
 # print(fullname)
 
+contact_information = {
+    "name": "Alfredo",
+    "lastname": "Deza",
+    "age": 49,
+    "height": 1.90
+}
+for key in contact_information.keys():
+    print(key)
+
+for key, value in contact_information.items():
+    print(key, value)
