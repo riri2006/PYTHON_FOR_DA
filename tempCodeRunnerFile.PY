@@ -1,10 +1,6 @@
-students_set = {"Vedant", "Raj", "Amit", "Vedant"}
-
-print("SET:")
-print(students_set)
-
-students_set.add("Rahul")
-
-print("After Add:", students_set)
-
-print()
+def fun(name ='vedant', roll_no = 36):
+    print("my name is ", name)
+    print("my roll no is ", roll_no)
+    return name, roll_no
+result = fun(37, 'riddhi')
+print(result)
