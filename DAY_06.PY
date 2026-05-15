@@ -15,9 +15,14 @@
 # d = {"a":10, "b":20, "c":30, "d":40}
 # myfun(**d)
     
-def addnumbers(*args):
-    print(args)
-    print(sum(args))
+# def addnumbers(*args):
+#     print(args)
+#     print(sum(args))
 
-addnumbers(1,2,3)
-addnumbers(1,2,3,4)
+# addnumbers(1,2,3)
+# addnumbers(1,2,3,4)
+
+
+
+
+
