@@ -21,44 +21,59 @@
 
 
 # golbal() variable
-x = 10
-print(globals())
+# x = 10
+# print(globals())
 
-#  accessing the variable 
-print(globals()['x'])
-
-
-# local variable
-def test():
-    a = 10
-    b = 20
-
-    print(locals())
-
-test()
+# #  accessing the variable 
+# print(globals()['x'])
 
 
-print(dir(str))
+# # local variable
+# def test():
+#     a = 10
+#     b = 20
+
+#     print(locals())
+
+# test()
 
 
-
-#  example
-var_name = "x"
-
-x = 10
-print(var_name)
-print(globals()[var_name])
-print(globals())
+# print(dir(str))
 
 
 
-import builtins
+# #  example
+# var_name = "x"
 
-func = builtins.print
+# x = 10
+# print(var_name)
+# print(globals()[var_name])
+# print(globals())
+
+
+
+# import builtins
+
+# func = builtins.print
  
-func("Hello Vedant")
+# func("Hello Vedant")
 
 
-import builtins
-builtins.print = lambda x: "Blocked"
-print("Hello")
+# import builtins
+# builtins.print = lambda x: "Blocked"
+# print("Hello")
+
+#  packing and unpacking 
+my_list = [1,2,3,4,5]
+print(*my_list)
+
+my_tuple = (1,2,3,4,5)
+print(*my_tuple)
+
+my_set = {1,2,3,4,5}
+print(*my_set)
+
+my_dict = {"a":1, "b":2, "c":3}
+print(*my_dict)
+for k,v in my_dict.items():
+    print(k,v)
