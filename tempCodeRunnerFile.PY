@@ -1,4 +1,3 @@
-my_dict = {"a":1, "b":2, "c":3}
-print(*my_dict)
-for k,v in my_dict.items():
-    print(k,v)
+person = {"name": "Daneyal", "age": 25, "city": "Kanpur"}
+
+print("My name is {name}, I am {age} years old, live in {city} city.".format(**person))

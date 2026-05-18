@@ -64,16 +64,53 @@
 # print("Hello")
 
 #  packing and unpacking 
-my_list = [1,2,3,4,5]
-print(*my_list)
+# import numbers
 
-my_tuple = (1,2,3,4,5)
-print(*my_tuple)
 
-my_set = {1,2,3,4,5}
-print(*my_set)
+# my_list = [1,2,3,4,5]
+# print(*my_list)
 
-my_dict = {"a":1, "b":2, "c":3}
-print(*my_dict)
-for k,v in my_dict.items():
-    print(k,v)
+# my_tuple = (1,2,3,4,5)
+# print(*my_tuple)
+
+# my_set = {1,2,3,4,5}
+# print(*my_set)
+
+# my_dict = {"a":1, "b":2, "c":3}
+# print(*my_dict)
+# for k,v in my_dict.items():
+#     print(k,v)
+
+
+
+
+# unpcking
+# def funsum(a,b,c,d):
+#     print(a+b+c+d)
+
+# my_list = [1,2,3,4]
+# funsum(*my_list)  
+
+def myfun1(*numbers):
+   print(numbers)
+   print(sum(numbers))
+myfun1(1,2,3,4,5)
+# myfun1(*numbers)
+  
+
+
+# def sum_of_lists(*list):
+#    print(sum(list))  
+
+#    list1 = [1,2,3,4,5]
+#    list2 = [6,7,8,9,10]
+#    list3 = [11,12,13,14,15]
+#    list = [*list1,*list2,*list3]
+
+
+person = {"name": "Daneyal", "age": 25, "city": "Kanpur"}
+
+print("My name is {name}, I am {age} years old, live in {city} city.".format(**person))
+
+
+
