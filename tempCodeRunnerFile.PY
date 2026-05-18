@@ -1,6 +1,10 @@
-a = int()
-b = int(7)
-c = int("12")
+def converter(cel):
+    fer = (0.45 * cel)
+    return fer
 
-total = a + b + c
-print(total)
+temp = float(input("please enter the temperature::"))
+print(temp)
+
+    
+result = converter(temp)
+print(result)
