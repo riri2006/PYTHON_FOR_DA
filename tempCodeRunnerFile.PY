@@ -1,3 +1,6 @@
-person = {"name": "Daneyal", "age": 25, "city": "Kanpur"}
+a = int()
+b = int(7)
+c = int("12")
 
-print("My name is {name}, I am {age} years old, live in {city} city.".format(**person))
+total = a + b + c
+print(total)
