@@ -64,3 +64,10 @@ result = converter(temp_input)
 
 # Print the final result
 print(f"{temp_input}°C is equal to {result}°F")
+
+
+def fun(a:int, b:int) -> int:
+    return a+b
+r = fun(1,20)
+print(r)
+
