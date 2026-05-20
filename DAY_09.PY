@@ -69,3 +69,15 @@ for word in name:
         largest = word
 
 print(largest)  
+
+
+import os
+print("📦 Adding files...")
+os.system("git add .")
+commit_msg = input("Enter a commit message: ")
+
+os.system(f'git commit -m "{commit_msg}"')
+
+os.system("git push origin main")
+
+print("✅ Done! Your code is pushed.")
