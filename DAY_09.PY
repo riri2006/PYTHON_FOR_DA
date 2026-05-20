@@ -30,3 +30,16 @@ list1 = [1,2,3,4]
 
 filter1 = list(filter(lambda a: a%2 == 0, list1))
 print(filter1)
+
+
+words = ["apple", "banana", "cherry", "date", "elderberry"]
+
+filter1 = filter(lambda word : "a" in word , words)
+print(list(filter1))
+
+
+marks = [10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100]
+
+filter2 = filter(lambda mark : mark > 30 , marks)
+print(list(filter2))
+
