@@ -1,0 +1,17 @@
+from car import car
+
+mycar = car("toyota", "camry")
+print(mycar.brand)
+print(mycar.model)
+mycar = car("honda", "civic")
+print(mycar.brand)
+print(mycar.model)
+mycar = car("ford", "mustang")
+print(mycar.brand)
+print(mycar.model)
+mycar = car("bmw", "x5")
+print(mycar.brand)
+print(mycar.model)
+mycar = car("audi", "a4")
+print(mycar.brand)
+print(mycar.model)
