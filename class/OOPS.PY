@@ -35,10 +35,33 @@
      
 
 
-class car():
-    def __init__(self,brand, model):
-        self.brand = brand
-        self.model = model
-mycar = car("toyota", "camry")
-print(mycar.brand)
-print(mycar.model)
+# class car():
+#     def __init__(self,brand, model):
+#         self.brand = brand
+#         self.model = model
+# mycar = car("toyota", "camry")
+# print(mycar.brand)
+# print(mycar.model)
+
+
+class vehicel():
+    color = "yellow"
+    model = 1985
+    number = 1947
+
+v1 = vehicel()
+print(v1.color)
+print(v1.model)
+print(v1.number)
+
+
+
+nums = [1,2,3]
+
+result = list(map(lambda x: x*2, nums))
+
+print(result)
+
+
+import math
+print(vars(math))
