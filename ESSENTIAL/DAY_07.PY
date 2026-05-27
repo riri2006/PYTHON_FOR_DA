@@ -6,36 +6,36 @@
 # print(y)
 
 
-# def myfun():
-#     b = 20
-#     def nestedfun():
-#         nonlocal b
-#         x = 10 
-#         b = 30 
-#         print(x)
-#         print(b)
+def myfun():
+    b = 20
+    def nestedfun():
+        nonlocal b
+        x = 10 
+        b = 30 
+        print(x)
+        print(b)
 
-#     nestedfun()
-#     print(b)
-# myfun()
+    nestedfun()
+    print(b)
+myfun()
 
 
 # golbal() variable
-# x = 10
-# print(globals())
+x = 10
+print(globals())
 
-# #  accessing the variable 
-# print(globals()['x'])
+#  accessing the variable 
+print(globals()['x'])
 
 
 # # local variable
-# def test():
-#     a = 10
-#     b = 20
+def test():
+    a = 10
+    b = 20
 
-#     print(locals())
+    print(locals())
 
-# test()
+test()
 
 
 # print(dir(str))
@@ -52,16 +52,16 @@
 
 
 
-# import builtins
+import builtins
 
-# func = builtins.print
+func = builtins.print
  
-# func("Hello Vedant")
+func("Hello Vedant")
 
 
-# import builtins
-# builtins.print = lambda x: "Blocked"
-# print("Hello")
+import builtins
+builtins.print = lambda x: "Blocked"
+print("Hello")
 
 #  packing and unpacking 
 # import numbers
@@ -73,8 +73,8 @@
 # my_tuple = (1,2,3,4,5)
 # print(*my_tuple)
 
-# my_set = {1,2,3,4,5}
-# print(*my_set)
+my_set = {1,2,3,4,5}
+print(*my_set)
 
 # my_dict = {"a":1, "b":2, "c":3}
 # print(*my_dict)
@@ -85,17 +85,17 @@
 
 
 # unpcking
-# def funsum(a,b,c,d):
-#     print(a+b+c+d)
+def funsum(a,b,c,d):
+    print(a+b+c+d)
 
-# my_list = [1,2,3,4]
-# funsum(*my_list)  
+my_list = [1,2,3,4]
+funsum(*my_list)  
 
 def myfun1(*numbers):
    print(numbers)
    print(sum(numbers))
-myfun1(1,2,3,4,5)
-# myfun1(*numbers)
+# myfun1(1,2,3,4,5)
+
   
 
 
