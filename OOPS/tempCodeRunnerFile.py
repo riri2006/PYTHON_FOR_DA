@@ -1,8 +1,10 @@
-class employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
+class dog:
+    def __init__(self,name , breed):
+        self.name = name 
+        self.breed = breed
 
-e1 = employee("vedant", 1000000000000)
-e2 = employee("riddhi" , 1000000000000000000)
-print( e1.employee, e2.employee)
+    def bark(self):
+        print("{name} is barking")
+
+do = dog("luci","musi")
+dog.bark(do)
