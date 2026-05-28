@@ -1,20 +1,20 @@
-class fan:
-    def __init__(self,brand , speed):
-        self.brand =  brand
-        self.speed = speed
+class insta:
+    def __init__(self,username, followers):
+        self.username = username
+        self.followers = followers
 
-    def increase_speed(self,more_speed):
-        self.speed += more_speed
-        print(f"{self.speed}, {self.brand}")
+    def gain_followers(self, gained):
+        self.followers += gained
+        print(self.followers)
 
-    def dec_speed(self, less_speed):
-        self.speed -= less_speed  
-        print(f"{self.speed}")  
+    def lose_followers(self, lose):
+        self.followers -= lose
+        print(self.followers)  
 
-    def show_speed(self):
-        print(self.speed)    
+    def show_followers(self):  
+        print(self.followers) 
 
-s1 = fan("usha", 120)
-s1.increase_speed(100)
-s1.dec_speed(90)
-s1.show_speed()
+m = insta("vedant", 2000)
+m.gain_followers(1000)
+m.lose_followers(1500)  
+m.show_followers()

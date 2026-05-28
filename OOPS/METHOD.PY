@@ -114,3 +114,71 @@ s1.dec_speed(90)
 s1.show_speed()
 
 
+# TASK 2 — LIGHT SYSTEM 💡
+
+class light:
+    def __init__(self,brightness):
+        self.brightness = brightness
+
+    def increase_brightness(self,increase):
+        self.brightness += increase
+        print(f"the increased brightness is, {self.brightness}")
+
+    def decrease_brightness(self, decrease):
+        self.brightness -= decrease
+        print(f"the decreased brightness is {self.brightness}")
+
+    def show_brightness(self):
+        print(self.brightness)
+
+l1 = light(1000)
+l1.increase_brightness(200)
+l1.decrease_brightness(300)
+l1.show_brightness()
+
+
+# TASK 3 — YOUTUBE VIDEO ▶️
+class video:
+    def __init__(self, title, likes):
+        self.title = title
+        self.likes = likes
+
+    # Renamed this method from 'likes' to 'add_likes'
+    def add_likes(self, likees):
+        self.likes += likees
+        print(self.likes, self.title)
+
+    def dislike(self, dislike):
+        self.likes -= dislike
+        print(f"{self.likes}, aaya mja")  
+
+    def show_likes(self):
+        print(f"all likes are, {self.likes}")
+
+y = video("billionare", 100000)
+y.add_likes(5000)     # Updated method call here
+y.dislike(50000)
+y.show_likes()
+
+# TASK 4 — INSTAGRAM ACCOUNT 📸
+
+class insta:
+    def __init__(self,username, followers):
+        self.username = username
+        self.followers = followers
+
+    def gain_followers(self, gained):
+        self.followers += gained
+        print(self.followers)
+
+    def lose_followers(self, lose):
+        self.followers -= lose
+        print(self.followers)  
+
+    def show_followers(self):  
+        print(self.followers) 
+
+m = insta("vedant", 2000)
+m.gain_followers(1000)
+m.lose_followers(1500)  
+m.show_followers()         
