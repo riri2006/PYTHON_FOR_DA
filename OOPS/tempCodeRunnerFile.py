@@ -1,10 +1,20 @@
-class dog:
-    def __init__(self,name , breed):
-        self.name = name 
-        self.breed = breed
 
-    def bark(self):
-        print("{name} is barking")
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+    
+    def deposit(self, kharcha):
+        self.balance = self.balance - kharcha
+        print(f"{self.balance}, {self.name}")
+    
+    def withdraw(self, amount):
+        print(f"{self.balance}")
+    
+    def check_balance(self):
+        print(f"{self.balance}")
 
-do = dog("luci","musi")
-dog.bark(do)
+s1 = BankAccount("heera", 1000)
+s1.deposit(200000)
+s1.withdraw(300000)
+s1.check_balance()
