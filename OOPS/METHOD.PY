@@ -181,4 +181,5 @@ class insta:
 m = insta("vedant", 2000)
 m.gain_followers(1000)
 m.lose_followers(1500)  
-m.show_followers()         
+m.show_followers()  
+
