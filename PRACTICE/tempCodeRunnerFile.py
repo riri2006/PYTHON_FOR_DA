@@ -1,11 +1,9 @@
-def add(x,y):
-    # print("the sum of the two numbers:",x+y)
-    return x+y
-def subtract(x,y):
-    # print("the diff of the two numbers:", x-y)
-    return x-y
-    
-a = add(3,4)
-b = subtract(8,4)
-print(a)
-print(b)
+# Pass hello function to another function.
+def hello(name):
+    return f"hello,{name}"
+
+def pas1(fun,bela):
+    return fun(bela)
+
+reult = pas1(hello,"vedant")
+print(reult)
