@@ -177,3 +177,11 @@ print(triple(5))
 
 
 # LEVEL 8 TASK Create a power machine
+def power(x):
+  def expo(y):
+    return y**x
+  return expo
+square = power(2)
+cube = power(3)
+print(square(4))
+print(cube(3))
