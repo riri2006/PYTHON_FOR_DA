@@ -176,7 +176,7 @@ triple = machine(3)
 print(triple(5))
 
 
-# LEVEL 8 TASK Create a power machine
+# LEVEL 8 and 9 TASK Create a power machine
 def power(x):
   def expo(y):
     return y**x
@@ -185,3 +185,58 @@ square = power(2)
 cube = power(3)
 print(square(4))
 print(cube(3))
+
+def outer():
+
+    x = 100
+
+    def inner():
+        print(x)
+
+    return inner
+
+a = outer()
+
+a()
+
+
+def counter():
+    count = 0
+    def counting():
+      nonlocal count
+      
+      count += 1
+      return count
+    return counting
+a = counter()
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+print(a())
+
+
+def bank(balance):
+
+    def account(amount):
+
+        nonlocal balance
+
+        balance += amount
+
+        return balance
+
+    return account
+
+user1 = bank(1000)
+
+print(user1(500))
+print(user1(-200))
+print(user1(100))
+
+
