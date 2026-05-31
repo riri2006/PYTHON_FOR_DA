@@ -92,35 +92,88 @@
 
 
 # LEVEL 1
-def outer(name):
+# def outer(name):
     
-    def inner():
-        print(f"Hello {name}")
+#     def inner():
+#         print(f"Hello {name}")
     
-    return inner
+#     return inner
 
-x = outer("vedant")
+# x = outer("vedant")
 
-x()
+# x()
 
 
-def outer():
-    def inner():
-        print("Hello from inner!")
-    return inner
+# def outer():
+#     def inner():
+#         print("Hello from inner!")
+#     return inner
 
-outer()() 
+# outer()() 
 
-# next
-def task(func):
-    def wrapper():
-        func()
-        print("vedant")
-    return wrapper    
-@task
-def inner():
-    print("hello")
+# # next
+# def task(func):
+#     def wrapper():
+#         func()
+#         print("vedant")
+#     return wrapper    
+# @task
+# def inner():
+#     print("hello")
 
-inner()
+# inner()
   
-  
+
+# # LEVEL 4 TASK Now create TWO functions
+# def outer(name):
+#     def inner():
+#         print(name)
+#     return inner
+# english = outer("hello")
+# hindi = outer("namaste")
+# english()
+# hindi()
+
+# Score Generator Fail at 45 Pass at 90
+def marks(n):
+    
+    def status():
+    
+
+       if n < 45:
+        print("fail")          # agar n 45 se chhota hai
+       elif n > 90:
+        print("pass")          # agar n 90 se bada hai
+       else:
+        print("average")       # agar n 45–90 ke beech hai
+
+
+    return status
+check = marks(45) 
+wow = marks(90)
+check()
+wow()
+
+
+# Multiplier Machine . Double
+def machine(x):
+  def multi(y):
+    return y*x
+  return multi
+double = machine(2)
+
+print(double(10))
+
+
+# Triple
+def machine(x):
+  def multi(y):
+    return y*x
+  return multi
+double = machine(2)
+triple = machine(3)
+
+print(triple(5))
+
+
+# LEVEL 8 TASK Create a power machine

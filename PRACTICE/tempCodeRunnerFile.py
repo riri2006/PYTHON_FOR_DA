@@ -1,11 +1,8 @@
-def task(func):
-    def wrapper():
-        func()
-        print("vedant")
-    return wrapper    
-@task
-def inner():
-    print("hello")
-
-inner()
-  
+def outer(name):
+    def inner():
+        print(name)
+    return inner()
+english = outer("hello")
+hindi = outer("namaste")
+english()
+hindi()
