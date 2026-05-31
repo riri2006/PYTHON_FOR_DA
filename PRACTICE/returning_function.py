@@ -35,4 +35,10 @@ cube = powerr(3)
 print(square(5))
 print(cube(5))
 
-
+# Create outer() returning inner().
+def outer():
+    def inner():
+        print("hello")
+    return inner
+a = outer
+a()    

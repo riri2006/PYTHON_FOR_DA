@@ -1,9 +1,11 @@
-# Pass hello function to another function.
-def hello(name):
-    return f"hello,{name}"
+def task(func):
+    def wrapper():
+        func()
+        print("vedant")
+    return wrapper    
+@task
+def inner():
+    print("hello")
 
-def pas1(fun,bela):
-    return fun(bela)
-
-reult = pas1(hello,"vedant")
-print(reult)
+inner()
+  

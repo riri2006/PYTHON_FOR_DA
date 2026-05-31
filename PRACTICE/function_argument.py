@@ -70,24 +70,57 @@
 
 
 # Create a function using both *args and **kwargs
-def mojmasti(*args,**kwargs):
-    for i in args:
-        print(i)
-    for k , v in kwargs.items():
-        print(f"{k} = {v}")
+# def mojmasti(*args,**kwargs):
+#     for i in args:
+#         print(i)
+#     for k , v in kwargs.items():
+#         print(f"{k} = {v}")
 
         
-mojmasti(1,2,3,4,5, name = "vedant", age = 21, course = "python")
+# mojmasti(1,2,3,4,5, name = "vedant", age = 21, course = "python")
        
 
-# Pass hello function to another function.
-def hello(name):
-    return f"hello,{name}"
+# # Pass hello function to another function.
+# def hello(name):
+#     return f"hello,{name}"
 
-def pas1(fun,bela):
-    return fun(bela)
+# def pas1(fun,bela):
+#     return fun(bela)
 
-reult = pas1(hello,"vedant")
-print(reult)
+# reult = pas1(hello,"vedant")
+# print(reult)
 
 
+# LEVEL 1
+def outer(name):
+    
+    def inner():
+        print(f"Hello {name}")
+    
+    return inner
+
+x = outer("vedant")
+
+x()
+
+
+def outer():
+    def inner():
+        print("Hello from inner!")
+    return inner
+
+outer()() 
+
+# next
+def task(func):
+    def wrapper():
+        func()
+        print("vedant")
+    return wrapper    
+@task
+def inner():
+    print("hello")
+
+inner()
+  
+  
