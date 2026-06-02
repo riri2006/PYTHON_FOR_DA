@@ -38,3 +38,33 @@ def test(a,*args):
     print(a,args)
 
 test(10,20,30,40)
+
+def a():
+    return b()
+
+def b():
+    return 10
+
+print(a())
+
+# .........
+def test():
+    return print("Hello")
+
+x = test()
+
+print(x)
+
+# .........
+def say_hello():
+    return "Hello there!"
+
+def get_machine():
+    # Returning the function object itself
+    return say_hello 
+
+# We run get_machine(), and save what it gives us into 'my_tool'
+my_tool = get_machine() 
+
+print(my_tool())    # Output: <function say_hello at 0x...>
+print(my_tool())  # Output: "Hello there!" (We have to turn the machine on!)

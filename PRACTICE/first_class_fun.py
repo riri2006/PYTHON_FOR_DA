@@ -126,3 +126,24 @@ a = add(3,4)
 b = subtract(8,4)
 print(a)
 print(b)
+
+# Marks Calculator input [10,20,30,40],output 100
+def marksCalculator(list):
+    # list = [10,20,30,40]
+    total = 0
+    for i in list:
+        total += i
+        
+    return total
+marks = marksCalculator([10,20,30,40])
+print(marks)    
+print(marks)    
+
+# Task 2...Create:Word Counter
+def counter():
+   text = "hello indians im the boss."
+   total_space = text.count(" ")
+   return total_space
+print(counter())
+
+
