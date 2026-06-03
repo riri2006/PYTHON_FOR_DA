@@ -98,6 +98,3 @@ city1 = input("Please enter your city name ")
 
 student_info(name = name1, age = age1,city=city1)    
 
-# Task 3  Build:Mini Calculator
-def calculator()
-    
