@@ -1,17 +1,16 @@
-import pandas as pd
-def student_info(**kwargs):
+def mood():
+   print("meri jaanu ka mood kaisa hai jaano ")
+def happy():
+   print("meri kehsu ka mood ekdm ok hai ")   
+def romantic():   
+   print("aaj hum khana khaynge ❤️❤️❤️")
 
-    df = pd.DataFrame([kwargs])
-    
-    print("\n--- Pandas DataFrame ---")
-    print(df)
-    
-    # Optional: You can return it to use it later in your code
-    return df
+commands = {
+   "hello":mood(),
+   "mwaah":romantic(),
+   "puuchi":happy()
+}
 
-name1 = input("Please Enter Your Name ")
-age1 = int(input("Please enter your Age "))
-city1 = input("Please enter your city name ")
-
-
-student_info(name = name1, age = age1,city=city1)  
+commands["hello"]
+commands["mwaah"]
+commands["puuchi"]

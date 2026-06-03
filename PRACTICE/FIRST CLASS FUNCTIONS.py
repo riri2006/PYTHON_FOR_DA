@@ -135,6 +135,9 @@
 # hindi()
 
 # Score Generator Fail at 45 Pass at 90
+from re import sub
+
+
 def marks(n):
     
     def status():
@@ -240,3 +243,136 @@ print(user1(-200))
 print(user1(100))
 
 
+# Store add() function in a variable and call it.
+def add():
+   x = int(input("PLEASE ENTER THE NUMBER "))
+   y = int(input("PLEASE ENTER THE NUMBER "))
+   sum = x + y
+   return sum
+x = add
+print(x())
+
+# Pass add() into another function:
+def adding(x,y):
+    return x+y
+def passing(g,a,b):
+    return g(a,b)
+add = passing(adding, 4,5)
+print(add)  
+
+# Store functions in dictionary:
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+# Dictionary mapping operators to functions
+operations = {
+    "+": add,
+    "-": sub,
+    "*": mul,
+    "/": div
+}
+
+def calculator(op, a, b):
+    return operations[op](a, b)
+
+# Example usage
+print(calculator("+", 2, 2))  # 4
+print(calculator("-", 4, 2))  # 2
+print(calculator("*", 6, 2))  # 12
+print(calculator("/", 8, 2))  # 4.0
+
+
+
+# function selector
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+# Dictionary mapping operators to functions
+operations = {
+    "+": add,
+    "-": sub,
+    "*": mul,
+    "/": div 
+}
+
+user = input("Please Enter The Opeartion ")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if user in operations:
+  result = operations[user](a,b)
+  print("result = ",result)
+else:
+   print("invalid user input")  
+
+
+# Create pipeline:
+def clean():
+   print("pipe 1")
+def validate():
+   print("pipe 2") 
+def save():
+   print("pipe 3")     
+
+list1 = [clean(), validate(),save()]
+for i in list1:
+    print(list1)
+
+# Build mini command system:
+def help_command():
+    print("Available commands: help, exit, greet")
+
+def exit_command():
+    print("Exiting program... Goodbye!")
+    
+
+def greet_command():
+    print("Hello Vedant! 👋 Welcome to the mini command system.")
+
+# Dictionary mapping command names to functions
+commands = {
+    "help": help_command,
+    "exit": exit_command,
+    "greet": greet_command
+}
+
+# Example usage
+commands["help"]()   # Calls help_command
+commands["greet"]()  # Calls greet_command
+commands["exit"]() # Uncomment to exit program
+
+
+# baby mood command system
+def mood():
+   print("meri jaanu ka mood kaisa hai jaano ")
+def happy():
+   print("meri kehsu ka mood ekdm ok hai ")   
+def romantic():   
+   print("aaj hum khana khaynge ❤️❤️❤️")
+
+commands = {
+   "hello":mood(),
+   "mwaah":romantic(),
+   "puuchi":happy()
+}
+
+commands["hello"]
+commands["mwaah"]
+commands["puuchi"]

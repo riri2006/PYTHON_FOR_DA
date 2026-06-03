@@ -83,7 +83,7 @@ def third():
 
 fun = [first(), second(), third()]
 for i in fun:
-    print(fun())   
+    print(fun)   
 
 
 
@@ -145,5 +145,36 @@ def counter():
    total_space = text.count(" ")
    return total_space
 print(counter())
+
+
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+# Dictionary mapping operators to functions
+operations = {
+    "+": add,
+    "-": sub,
+    "*": mul,
+    "/": div
+}
+
+def calculator(op, a, b):
+    return operations[op](a, b)
+
+# Example usage
+print(calculator("+", 2, 2))  # 4
+print(calculator("-", 4, 2))  # 2
+print(calculator("*", 6, 2))  # 12
+print(calculator("/", 8, 2))  # 4.0
+
 
 
