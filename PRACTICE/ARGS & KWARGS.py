@@ -68,3 +68,33 @@ my_tool = get_machine()
 
 print(my_tool())    # Output: <function say_hello at 0x...>
 print(my_tool())  # Output: "Hello there!" (We have to turn the machine on!)
+
+
+# Create add 
+def add(*args):
+    total = 0
+    for i in args:
+        total += i
+    return total
+jod = add(1,2,3,4,5)
+print(jod)
+
+# Task 2
+import pandas as pd
+def student_info(**kwargs):
+
+    df = pd.DataFrame([kwargs])
+    
+    print("\n--- Pandas DataFrame ---")
+    print(df)
+    
+    # Optional: You can return it to use it later in your code
+    return df
+
+name1 = input("Please Enter Your Name ")
+age1 = int(input("Please enter your Age "))
+city1 = input("Please enter your city name ")
+
+
+student_info(name = name1, age = age1,city=city1)    
+    
