@@ -1,12 +1,15 @@
-class employee:
-    def __init__(self,sal,ag):
-        self.salary = sal
-        self.age = ag
-    def display(self):
-        print("the salary{self.sal} and thr age is {self.age}")    
+class Student:
 
-e1=employee(23000,32)  
-e2 =employee(230000000,32)  
+    school = "ABC"
 
-print(e1.salary)
-print(e2.salary,e2.age)
+    def __init__(self,name):
+        self.name = name
+
+s1 = Student("Vedant")
+s2 = Student("Riddhi")
+
+s1.school = "XYZ"
+
+print(s1.school)
+print(s2.school)
+print(Student.school)
