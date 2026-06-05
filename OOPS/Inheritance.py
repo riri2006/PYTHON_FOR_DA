@@ -23,8 +23,9 @@ class Audi(Car):
         print("Driving from hamarpur")   
 
 d1 = Audi(4,"v8","audiq7",100)
-print(d1.driving_school())
+d1.driving_school()
 print(d1.windows)
 print(d1.engine)
 print(d1.model) 
-print(d1.milage)        
+print(d1.milage)
+d1.self_driving()    

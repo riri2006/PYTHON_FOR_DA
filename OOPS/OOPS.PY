@@ -62,3 +62,8 @@ print(result)
 
 import math
 print(vars(math))
+
+def hello():
+    return 'Goodbye, Mars!'
+result = hello()
+print(result)

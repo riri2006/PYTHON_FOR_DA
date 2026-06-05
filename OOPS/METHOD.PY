@@ -119,6 +119,8 @@ s2 = Student()
 print(type(s1.intro()))  
 print(type(s2.intro()))  
 
+
+# Class variable and instance variable.
 class Student:
 
     school = "ABC"
@@ -130,7 +132,35 @@ s1 = Student("Vedant")
 s2 = Student("Riddhi")
 
 s1.school = "XYZ"
+s2.school = "ahhh"
 
 print(s1.school)
 print(s2.school)
 print(Student.school)
+
+class Dog:
+    pass
+
+d1 = Dog()
+d2 = Dog()
+
+print(d1 == d2)
+
+
+class Test:
+
+    def show(self):
+        print("Hello")
+
+t1 = Test()
+
+print(t1.show())
+
+class Test:
+
+    def show(self):
+        return "Hello"
+
+t1 = Test()
+
+print(t1.show())
