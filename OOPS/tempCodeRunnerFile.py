@@ -1,30 +1,18 @@
-class Car:
-    def __init__(self,windows, engine, model):
-        self.windows = windows
-        self.engine = engine
-        self.model = model
-    def self_driving(self):
-        print("This is a self driving car")   
-# d = Car(4,"v8","audiq7")
-# print(d.self_driving())
-# print(d.windows)
-# print(d.engine)
-# print(d.model)
+class A:
 
-class Audi(Car):
-    def __init__(self,windows,engine,model,milage):
-        super().__init__(windows, engine, model)
-        self.windows = windows
-        self.engine = engine
-        self.model = model
-        self.milage = milage
+    def m1(self):
+        return 20
 
-    def driving_school(self):
-        print("Driving from hamarpur")   
+class B(A):
 
-d1 = Audi(4,"v8","audiq7",100)
-print(d1.driving_school())
-print(d1.windows)
-print(d1.engine)
-print(d1.model) 
-print(d1.milage)        
+    def m1(self):
+        val=self.m1()+30
+        return val
+
+class C(B):
+  
+    def m1(self):
+        val=super().m1()+20
+        return val
+obj=C()
+print(obj.m1())
