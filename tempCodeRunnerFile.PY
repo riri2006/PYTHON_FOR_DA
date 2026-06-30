@@ -1,4 +1,8 @@
-list = [1,2,3,4]
+def var(x):
+   print(x,id(x))
+   x.append(4)
+   print(x,id(x))
 
-filter1 = list(filter(lambda a: a%2 == 0, list))
-print(filter1 )
+x = [1,2,3]   
+var(x)
+print(x,id(x))
