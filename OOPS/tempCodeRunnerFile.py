@@ -1,18 +1,11 @@
-class A:
+class Car():
+ --snip---
 
-    def m1(self):
-        return 20
+def update_odometer(self, mileage):
+ """Set the odometer reading to the given value."""
+ self.odometer_reading = mileage
 
-class B(A):
-
-    def m1(self):
-        val=self.m1()+30
-        return val
-
-class C(B):
-  
-    def m1(self):
-        val=super().m1()+20
-        return val
-obj=C()
-print(obj.m1())
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+my_new_car.update_odometer(23)
+my_new_car.read_odometer()
