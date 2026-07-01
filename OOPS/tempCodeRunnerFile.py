@@ -1,11 +1,17 @@
-class Car():
- --snip---
+class Parents:
+    def __init__(self,num):
+        self.num = num
 
-def update_odometer(self, mileage):
- """Set the odometer reading to the given value."""
- self.odometer_reading = mileage
+    def get_num(self):
+        return self.num    
 
-my_new_car = Car('audi', 'a4', 2016)
-print(my_new_car.get_descriptive_name())
-my_new_car.update_odometer(23)
-my_new_car.read_odometer()
+class Child(Parents):
+    def __init__(self,var,num):
+        super().__init__(num)
+        self.var = var
+
+    def get_var(self):
+        return self.var
+
+obj = Child(100,10)
+print(obj.get_num(),obj.get_var())
