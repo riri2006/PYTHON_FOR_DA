@@ -1,5 +1,4 @@
-def funsum(a,b,c,d):
-    print(a+b+c+d)
-
-my_list = [1,2,3,4]
-funsum(*my_list) 
+def kwargs(name,age,love):
+    print("name: ",name,"age:",age,"love: ",love)
+bag={"name":"Riddhi", "age":21, "love":"vedant"}
+kwargs(**bag)
