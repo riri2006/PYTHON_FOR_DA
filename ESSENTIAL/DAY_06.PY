@@ -67,14 +67,19 @@ numbers(*values)
 
 # kwargs 
 
-def kwargs(**details): # as a dictonary
-    print(details)
+# def kwargs(**details): # as a dictonary
+#     print(details)
 
-kwargs(name = "vedant", age = 21, love = "riddhi")    
+# kwargs(name = "vedant", age = 21, love = "riddhi")    
 
-def kwargs(name,age,love):
-    print("name: ",name,"age:",age,"love: ",love)
-bag={"name":"Riddhi", "age":21, "love":"vedant"}
-kwargs(**bag)
+# def kwargs(name,age,love):
+#     print("name: ",name,"age:",age,"love: ",love)
+# bag={"name":"Riddhi", "age":21, "love":"vedant"}
+# kwargs(**bag)
 
 
+def new(name):
+    print("hola omigo!")
+
+def neo(new):
+        

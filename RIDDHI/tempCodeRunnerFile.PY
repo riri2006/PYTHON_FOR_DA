@@ -1,3 +1,12 @@
-user = int(input("enter the values "))
+def id(name):
+    print(name)
 
-print(type(user))
+
+
+
+
+
+def demo(fun, argument):
+    return fun(argument)
+
+print(demo(id,"riddhi"))
