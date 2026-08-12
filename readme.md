@@ -1,3 +1,7 @@
+# Python - Closures & Decorators Guide 🐍
+
+> Author: [Vedant021004](https://github.com/Vedant021004)
+
 Closures and Decorators are advanced topics, but you don’t need super deep theory at first 👍
 
 You only need:
