@@ -48,11 +48,11 @@
 
 ### Class and Object
 
-* [ ] **16.** Create a `Car` class with a method `drive()` that prints `"Car is driving"`.
+* [X] **16.** Create a `Car` class with a method `drive()` that prints `"Car is driving"`.
 
-* [ ] **17.** Create a `Student` class with `name` and `age` attributes.
+* [X] **17.** Create a `Student` class with `name` and `age` attributes.
 
-* [ ] **18.** Create a `Car` class with `brand` and `model` using `__init__()`.
+* [X] **18.** Create a `Car` class with `brand` and `model` using `__init__()`.
 
 Example:
 
@@ -60,9 +60,9 @@ Example:
 car = Car("Toyota", "Fortuner")
 ```
 
-* [ ] **19.** Create a `Person` class with `name` and `age`, then create **three objects**.
+* [X] **19.** Create a `Person` class with `name` and `age`, then create **three objects**.
 
-* [ ] **20.** Create a `BankAccount` class with `name` and `balance`, then create an object and print both.
+* [X] **20.** Create a `BankAccount` class with `name` and `balance`, then create an object and print both.
 
 ---
 
