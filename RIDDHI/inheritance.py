@@ -152,3 +152,24 @@ class ElectricCar(Car):
 car = ElectricCar()
 
 car.start()
+
+
+
+class Car:
+
+    def start(self, key=None, mode=None):
+        if key is None and mode is None:
+            print("Car starts normally")
+
+        elif mode is None:
+            print("Car starts with key:", key)
+
+        else:
+            print("Car starts with key:", key, "and mode:", mode)
+
+
+car = Car()
+
+car.start()
+car.start("ABC123")
+car.start("ABC123", "Sport")
