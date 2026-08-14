@@ -18,15 +18,15 @@
 
 ### Functions
 
-* [ ] **6.** Create a function `greet()` that prints `"Hello Python"`.
+* [X] **6.** Create a function `greet()` that prints `"Hello Python"`.
 
-* [ ] **7.** Create a function that accepts a name and prints `"Hello Vedant"`.
+* [X] **7.** Create a function that accepts a name and prints `"Hello Vedant"`.
 
-* [ ] **8.** Create a function that accepts two numbers and returns their sum.
+* [X] **8.** Create a function that accepts two numbers and returns their sum.
 
-* [ ] **9.** Create a function that accepts a number and returns whether it is even or odd.
+* [X] **9.** Create a function that accepts a number and returns whether it is even or odd.
 
-* [ ] **10.** Create a function that accepts three numbers and returns the largest.
+* [X] **10.** Create a function that accepts three numbers and returns the largest.
 
 ---
 
