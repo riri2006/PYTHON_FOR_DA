@@ -138,38 +138,25 @@
 
 
 
-class Car:
-    def start(self):
-        print("Car is starting")
+# class Car:
+#     def start(self):
+#         print("Car is starting")
 
 
-class ElectricCar(Car):
-    def start(self):
-        super().start()
-        print("Electric motor is starting")
+# class ElectricCar(Car):
+#     def start(self):
+#         super().start()
+#         print("Electric motor is starting")
 
 
-car = ElectricCar()
+# car = ElectricCar()
 
-car.start()
-
-
-
-class Car:
-
-    def start(self, key=None, mode=None):
-        if key is None and mode is None:
-            print("Car starts normally")
-
-        elif mode is None:
-            print("Car starts with key:", key)
-
-        else:
-            print("Car starts with key:", key, "and mode:", mode)
+# car.start()
 
 
-car = Car()
 
-car.start()
-car.start("ABC123")
-car.start("ABC123", "Sport")
+
+
+
+
+
