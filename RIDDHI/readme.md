@@ -32,11 +32,11 @@
 
 ### `try/except`
 
-* [ ] **11.** Ask the user for two numbers and divide them. Handle division by zero.
+* [X] **11.** Ask the user for two numbers and divide them. Handle division by zero.
 
-* [ ] **12.** Ask the user to enter an integer. Handle the case where the user enters text.
+* [X] **12.** Ask the user to enter an integer. Handle the case where the user enters text.
 
-* [ ] **13.** Write a program that handles both `ValueError` and `ZeroDivisionError`.
+* [X] **13.** Write a program that handles both `ValueError` and `ZeroDivisionError`.
 
 * [ ] **14.** Create a program using `try`, `except`, and `finally`.
 
