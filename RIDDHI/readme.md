@@ -4,15 +4,15 @@
 
 ### Conditions
 
-* [ X ] **1.** Write a program to check whether a number is positive, negative, or zero.
+* [X] **1.** Write a program to check whether a number is positive, negative, or zero.
 
-* [ X ] **2.** Write a program to check whether a number is even or odd.
+* [X] **2.** Write a program to check whether a number is even or odd.
 
-* [ X ] **3.** Take age as input and print whether the person is eligible to vote.
+* [X] **3.** Take age as input and print whether the person is eligible to vote.
 
-* [ X ] **4.** Take three numbers and print the largest number using `if-elif-else`.
+* [X] **4.** Take three numbers and print the largest number using `if-elif-else`.
 
-* [ X ] **5.** Check whether a given year is a leap year.
+* [X] **5.** Check whether a given year is a leap year.
 
 ---
 
